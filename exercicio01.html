@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JS</title>
+</head>
+<body>
+    <script>
+        // Criação de uma nova array com alguns países
+        let newArray = ['Albânia','Bolívia','Canadá','Dinamarca','Etiópia','Finlândia','Alemanha','Hungria','Irlanda','Japão','Quênia'];
+        
+        // ciclo for + console.log a mostrar cada item da array
+        for (p =0; p < newArray.length; p++) {
+            console.log(newArray[p]);
+        }
+        // .length para mostrar quantidade de itens da array
+        console.log(newArray.length);
+        
+        // .unshift para adicionar 'Portugal' à primeira posição da array
+        newArray.unshift('Portugal');
+        
+        // ciclo for + console.log para mostrar a lista modificada
+        for (x =0; x < newArray.length; x++) {
+            console.log(newArray[x]);
+        }
+
+        // .push para adicionar 'Espanha' à última posição da array
+        newArray.push('Espanha');
+
+         // ciclo for + console.log para mostrar a lista modificada
+         for (y =0; y < newArray.length; y++) {
+            console.log(newArray[y]);
+        }
+
+        // .slice + ciclo for para mostrar os últimos 3 elementos
+        let lastThreeElements = newArray.slice(-3);
+        for (i = 0; i < lastThreeElements.length; i++) {
+            console.log(lastThreeElements[i]);
+        }
+
+        // .join('-') para unir as strings
+        console.log(newArray.join('-'));
+    </script>
+</body>
+</html>
