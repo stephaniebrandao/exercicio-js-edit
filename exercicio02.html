@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JS 02</title>
+</head>
+<body>
+    <script>
+        let fairProduct = {
+            price: 100,
+            discount: 0,
+        };
+
+        if (fairProduct.discount < 0.10 && fairProduct.discount > 0.09) {
+            console.log(fairProduct.price + (fairProduct.price * 0.10));
+        } else if (fairProduct.discount > 0.10 && fairProduct.discount < 0.30) {
+            console.log(fairProduct.price - (fairProduct.price * 0.10));
+        } else (fairProduct.discount === 0);
+            console.log(fairProduct.price * 2);
+    </script>
+</body>
+</html>
