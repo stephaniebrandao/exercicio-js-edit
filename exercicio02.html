@@ -7,17 +7,27 @@
 </head>
 <body>
     <script>
-        let fairProduct = {
-            price: 100,
-            discount: 0,
-        };
+        // let fairProduct = {
+        //     price: 100,
+        //     discount: 0,
+        // };
 
-        if (fairProduct.discount < 0.10 && fairProduct.discount > 0.09) {
-            console.log(fairProduct.price + (fairProduct.price * 0.10));
-        } else if (fairProduct.discount > 0.10 && fairProduct.discount < 0.30) {
-            console.log(fairProduct.price - (fairProduct.price * 0.10));
-        } else (fairProduct.discount === 0);
-            console.log(fairProduct.price * 2);
+        // if (fairProduct.discount < 0.10 && fairProduct.discount > 0) {
+        //     console.log(fairProduct.price + (fairProduct.price * 0.10));
+        // } else if (fairProduct.discount > 0.10 && fairProduct.discount < 0.30) {
+        //     console.log(fairProduct.price - (fairProduct.price * 0.10));
+        // } else (fairProduct.discount === 0);
+        //     console.log(fairProduct.price * 2);
+
+        function getPreçoDesconto(preco, desconto) {
+            if(desconto < 10) {
+                return preco + desconto;
+            } else if(desconto >= 10 && desconto < 30) {
+                return preco - desconto;
+            } else if(desconto === 0) {
+                return preco * 2;
+            }
+        }
     </script>
 </body>
 </html>

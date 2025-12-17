@@ -8,39 +8,38 @@
 <body>
     <script>
         // Criação de uma nova array com alguns países
-        let newArray = ['Albânia','Bolívia','Canadá','Dinamarca','Etiópia','Finlândia','Alemanha','Hungria','Irlanda','Japão','Quênia'];
+        let paises = ['Albânia','Bolívia','Canadá','Dinamarca','Etiópia','Finlândia','Alemanha','Hungria','Irlanda','Japão','Quênia']; //OK
         
         // ciclo for + console.log a mostrar cada item da array
-        for (p =0; p < newArray.length; p++) {
-            console.log(newArray[p]);
+        for (let p =0; p < paises.length; p++) {
+            console.log(paises[p]); //OK
         }
         // .length para mostrar quantidade de itens da array
-        console.log(newArray.length);
+        function getPaisesLength() {
+            return paises.length;
+        }
         
         // .unshift para adicionar 'Portugal' à primeira posição da array
-        newArray.unshift('Portugal');
+        paises.unshift('Portugal'); //OK
         
         // ciclo for + console.log para mostrar a lista modificada
-        for (x =0; x < newArray.length; x++) {
-            console.log(newArray[x]);
+        for (x =0; x < paises.length; x++) {
+            console.log(paises[x]);
         }
 
         // .push para adicionar 'Espanha' à última posição da array
-        newArray.push('Espanha');
+        paises.push('Espanha'); //OK
 
          // ciclo for + console.log para mostrar a lista modificada
-         for (y =0; y < newArray.length; y++) {
-            console.log(newArray[y]);
+         for (y =0; y < paises.length; y++) {
+            console.log(paises[y]);
         }
 
         // .slice + ciclo for para mostrar os últimos 3 elementos
-        let lastThreeElements = newArray.slice(-3);
-        for (i = 0; i < lastThreeElements.length; i++) {
-            console.log(lastThreeElements[i]);
-        }
+        console.log(paises.slice(paises.length - 3, paises.length));
 
-        // .join('-') para unir as strings
-        console.log(newArray.join('-'));
+        // .join(' - ') para unir as strings
+        console.log(paises.join(' - '));
     </script>
 </body>
 </html>
